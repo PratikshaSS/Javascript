@@ -57,3 +57,29 @@ console.log(typeof(myName));
 //Bigint Datatype
 let a = 9999999999999999;
 console.log(a);
+
+// let b = 5.3646666 >> 5.36
+
+let c = "9999999999999999";
+console.log(c);
+
+let d = 9999999999999999n;
+console.log(d);
+
+
+//Non Primitive Datatypes 
+
+//Array : Used to store multiple items of same datatype
+let name = "Pooja live in Nashik, Mumbai is big city";
+console.log(name); 
+
+let cities = [];  //Empty Array
+cities = ['Pune', 'Mumbai', 'Nashik', 'Satara', 'Kolhapur','Sangli'];
+console.log(cities);
+
+console.log(typeof(cities));  //data type of array is always object
+
+console.log(cities[4]);  //kolhapur
+console.log(cities[6]);  //undefined
+console.log(cities.length);
+console.log(cities[cities.length-1]);
