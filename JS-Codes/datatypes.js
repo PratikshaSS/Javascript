@@ -52,24 +52,27 @@ console.log(typeof(abc));
 //Null Datatype
 var myName = null;
 console.log(myName);
-console.log(typeof(myName));
+console.log(typeof(myName));  //typeof of null is object
 
 //Bigint Datatype
 let a = 9999999999999999;
 console.log(a);
-
+console.log(typeof(a));  //number
 // let b = 5.3646666 >> 5.36
 
 let c = "9999999999999999";
 console.log(c);
+console.log(typeof(c));  //string
+
 
 let d = 9999999999999999n;
 console.log(d);
+console.log(typeof(d));  //bigint
 
 
 //Non Primitive Datatypes 
 
-//Array : Used to store multiple items of same datatype
+//Array : Used to store multiple items of same as well as different datatype
 let name = "Pooja live in Nashik, Mumbai is big city";
 console.log(name); 
 
@@ -83,3 +86,10 @@ console.log(cities[4]);  //kolhapur
 console.log(cities[6]);  //undefined
 console.log(cities.length);
 console.log(cities[cities.length-1]);
+
+//heterogenous array
+let hetarray = ['poonam', 505000, test(), true, null, undefined, 'pooja']
+console.log(hetarray[2]);  //error
+function test(){
+    //return 'poonam';
+}
