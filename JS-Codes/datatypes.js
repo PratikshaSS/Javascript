@@ -76,6 +76,7 @@ console.log(typeof(d));  //bigint
 let name = "Pooja live in Nashik, Mumbai is big city";
 console.log(name); 
 
+//Homogenous Array
 let cities = [];  //Empty Array
 cities = ['Pune', 'Mumbai', 'Nashik', 'Satara', 'Kolhapur','Sangli'];
 console.log(cities);
@@ -93,3 +94,16 @@ console.log(hetarray[2]);  //error
 function test(){
     //return 'poonam';
 }
+
+
+//Object
+//let cars = {}   //Empty Object
+let cars = {
+    carName : "Swift",   //key : value
+    carPrice : 800000,
+    carColor : "White"
+}
+
+console.log(cars.carName);
+console.log(cars.carColor);
+console.log(cars.carPrice);
