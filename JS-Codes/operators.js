@@ -21,7 +21,7 @@ let isFav = true;
 console.log(!isFav);    //false
 
 
-// Greater then and Smaller than  >> check only values not datatypes
+// Greater then and Less than >> check only values not datatypes
 let e = 40;
 let f = 50;
 
@@ -29,3 +29,33 @@ console.log(e > f); //false
 console.log(e < f); //true
 
 console.log(e <= f);    //true  >> less than equal to operator
+console.log(e >= f);    //false
+
+
+// (Logical AND) && AND : T && T --> T, else false >> Returns true only if both conditions are true 
+
+console.log(e < f && f > e);   //true  >> T && T
+console.log(e < f && f < e);    //false  >> T && F  >> F && T
+console.log(e > f && f < e);    //false  >> F && F
+
+
+// (Logical OR) || OR : F || F --> F, else true >> Returns false only when both conditions are false
+
+console.log(e < f || f == e);   //true >> T || F  >> F || T
+console.log(e < f || f > e);    //true >> T || T
+console.log(e > f || f < e);    //false >> F || F
+
+console.log(e < f || f == e && a != b); //true >> T || F >>T && T >>> True
+
+console.log(a != b);    //true >> value and datatype checked
+
+
+
+
+
+
+
+
+
+
+
