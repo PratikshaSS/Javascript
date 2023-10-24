@@ -21,3 +21,40 @@
 for(let a = 1 ; a <= 10 ; a++){
     console.log(a);
 }
+
+
+// for(;;){        //infinite loop
+//     console.log('poonam');
+// }
+
+
+let student = {
+    name: 'Pooja',
+    age: 25,
+    city: 'Pune'
+}
+
+//for in loop - it is used to iterate objects (ES1 version's feature)
+for(let x in student){
+    console.log(student[x]);     //[]property access symbol [x] 
+}
+
+
+ //for of  
+
+ let color = ['red','orange','blue','purple','pink']; 
+ for(let item of color){ 
+    console.log(item); 
+ } 
+  
+
+ //do while 
+
+ let a=0; 
+ do{ 
+     console.log(a); 
+     a++ 
+ } 
+ while(a<=5){ 
+ //  console.log(a); 
+ }
