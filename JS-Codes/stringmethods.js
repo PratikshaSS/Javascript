@@ -73,6 +73,7 @@ console.log(data1);
 // 10. charAt : gives character of specific index
 let text1 = "Hello World";
 console.log(text1.charAt(0));
+console.log(text1.charAt(13));  //returns empty value
 
 
 // 11. split : splits out data and will return array
@@ -80,3 +81,14 @@ let date = "04-04-1992";
 let newDate = date.split('-');        
 console.log(newDate);
 console.log(newDate[2]);
+
+
+let num2 = "236728";
+let m = parseInt(num2);
+console.log(m);
+
+
+let text4 = "fhc kjefgbsc w ydAJK JDSACBMX";
+t4 = text4.split(' ');
+console.log(t4);
+
