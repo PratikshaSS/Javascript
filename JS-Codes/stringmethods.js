@@ -34,3 +34,49 @@ console.log(str.replaceAll(/mumbai/ig , "Nashik"));
 console.log(str.replace("I live in Mumbai , I like Mumbai" , "Pratiksha"));
 
 
+// 5. toUpperCase : convert all string to uppercase
+console.log(str.toUpperCase());
+
+
+// 6. toLowerString : convert all string to Lowercase
+console.log(str.toLowerCase());
+
+
+// 7. concat : concat strings 
+let fName = 'Pratiksha';
+let lName = 'Shinde';
+// let fullName = fName + " " + lName;      //using concatnation operator
+let no = 60600;
+let fullName = fName.concat(' ' , no , ' ' , lName , ' ' , 4000)
+console.log(fullName);
+
+console.log('Upper Case :', str.toUpperCase() , 'Lower Case :', str.toLowerCase());
+
+
+// 8. trim : removes white spaces from both sides of the string
+let data = "        Pratiksha      ";
+console.log(data.trim());
+console.log(data.trimStart());
+console.log(data.trimEnd());
+
+var string = '   This     should    become   something        else    to . ';
+stringData = string.trim().replace(/\s+/g, " ");    //+ indicates one or more spaces
+console.log(stringData);
+
+
+// 9. toString : converts any datatype to string
+let num = 65656565;
+let data1 = num.toString()
+console.log(data1);
+
+
+// 10. charAt : gives character of specific index
+let text1 = "Hello World";
+console.log(text1.charAt(0));
+
+
+// 11. split : splits out data and will return array
+let date = "04-04-1992";
+let newDate = date.split('-');        
+console.log(newDate);
+console.log(newDate[2]);
