@@ -92,3 +92,43 @@ let text4 = "fhc kjefgbsc w ydAJK JDSACBMX";
 t4 = text4.split(' ');
 console.log(t4);
 
+
+// includes() : returns true if value is available in data else returns false
+let add = "Banwadi Karad Pratiksha Satara";
+console.log(add.includes('Pratiksha'));
+
+
+// startswith() : emdsWith() : 
+let statusCode = "100256";
+console.log(statusCode.startsWith("100"));
+console.log(statusCode.endsWith("256"));
+
+
+// indexOf() : gives index of starting letter of word.
+let text2 = "Hello to world, welcome to the to universe.";
+console.log(text2.indexOf("welcome"));
+console.log(text2.indexOf("the"));
+console.log(text2.indexOf("Hello"));
+console.log(text2.indexOf("to"));   //gives 1st match
+console.log(text2.indexOf("toooooo"));  //gives -ve value (-1)
+console.log(text2.lastIndexOf("to"));   //gives last match
+console.log(text2.lastIndexOf("toooo"));  // -1
+
+
+// search() : Search word is available in data or not.
+let text3 = "Mr. Blue has a blue house";
+console.log(text3.search("blue"));  //15
+console.log(text3.search(/blue/i)); //4
+
+// The search() cannot take a start position argument.
+// The indexOf() method cannot search against a regular expression.
+
+// The search() method returns the position of the first match.
+// The match() method returns an array of matches.
+
+
+let text5 = "The rain in SPAIN stays mainly in the plain";
+console.log(text5.match("ain"));
+console.log(text5.match(/ain/g));
+
+
