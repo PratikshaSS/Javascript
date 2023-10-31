@@ -33,9 +33,28 @@ console.log('Length of Array after unshift :',unshiftedItem);
 console.log('Original Array after unshift :',color1);
 
 
+// 7. join() : joins new element after every element. We can use it like separator
+let v = ['pink','red','blue','black','yellow'];
+let v1 = v.join('*');
+console.log('join Method :',v1);
+
+let name = ['Poonam','Patil'];
+let fname = name.join(' ');
+console.log('Join :',fname);
+
+let dob = ['04','05','2000'];
+console.log(dob.join('-'));
 
 
+// 8. concat() : merge / concat new array to existing array
+cl2 = ['black','yellow'];
+cl3 = [];
+let cl4 = cl2.concat(cl3,v,'white');
+console.log('concat method :',cl4);
 
 
-
-
+// 9. delete : array elements can be deleted using delete operator
+let fruits = ['Banana','Orange','Apple','Mango'];
+delete fruits[1];
+console.log('After Delete :',fruits);
+console.log('Length after delete :',fruits.length); //length remains same after deleting an element.
