@@ -54,7 +54,32 @@ console.log('concat method :',cl4);
 
 
 // 9. delete : array elements can be deleted using delete operator
+    // Generate undefined holes.
 let fruits = ['Banana','Orange','Apple','Mango'];
 delete fruits[1];
+//delete fruits[10];  //gives original array
 console.log('After Delete :',fruits);
 console.log('Length after delete :',fruits.length); //length remains same after deleting an element.
+
+
+// 10. splice() : Add new item to an array.
+    // splice(index[where u want to add item], count[how many element want to delete], element to add)
+const fruit1 = ["Banana","Orange","Apple","Mango"];
+// fruit1.splice(1,0,'Kiwi');
+fruit1.splice(1,2,'Kiwi','Grape');
+console.log("Splice Method :",fruit1);
+
+
+// 11. slice() : slices(cut) out a piece of an array into a new array
+        // first arg is inclusive and 2nd is exclusive
+const fruit2 = ["Banana","Orange","Apple","Mango","Kiwi"];
+let a = fruit2.slice(2,4);
+console.log("Slice Method :",a);
+console.log("Original Array :",fruit2);
+
+
+
+
+
+
+
