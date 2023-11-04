@@ -96,6 +96,23 @@ emp = [
 ]
 let names = emp.map(empData => {
     return empData.empName;
+    //return [empData.empName , empData.city];
 })
-
 console.log(names);
+
+
+// let nameObj = emp.map(({empName,city})=>({empName,city}));
+// console.log(nameObj);
+
+let nameObj = emp.map(({empName})=>({empName}));
+console.log(nameObj);
+
+
+// filter :
+let chars = ['A','P','B','C','B','T','A','B','D','B','C'];
+let ind = chars.filter((items, index)=>{
+    if(items == 'B'){
+        return index;
+    }
+})
+console.log(ind);
