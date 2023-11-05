@@ -108,11 +108,23 @@ let nameObj = emp.map(({empName})=>({empName}));
 console.log(nameObj);
 
 
-// filter :
-let chars = ['A','P','B','C','B','T','A','B','D','B','C'];
-let ind = chars.filter((items, index)=>{
-    if(items == 'B'){
-        return index;
+// Objects are used for storing keyed collections
+// Arrays are used for storing ordered collections
+
+
+// search index of an element : 
+const array = [10,20,30,20,40,20,50,88,20];
+const searchElement = 20;
+let foundIndex = [];
+
+array.forEach((element,index) => {
+    if(element === searchElement){
+        foundIndex.push(index);
     }
-})
-console.log(ind);
+});
+console.log("indexes are :",foundIndex);    //[1,3,5,8]
+
+
+// includes : gives true or false when element is present or not
+const array1 = [10,20,50,30,40,50,60,70,80,50,90];
+console.log('Includes :',array1.includes(50));  //true
