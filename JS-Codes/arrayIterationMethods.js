@@ -128,3 +128,21 @@ console.log("indexes are :",foundIndex);    //[1,3,5,8]
 // includes : gives true or false when element is present or not
 const array1 = [10,20,50,30,40,50,60,70,80,50,90];
 console.log('Includes :',array1.includes(50));  //true
+
+
+// --- Remove Duplicate Items --- 
+
+// 1. new Set() 
+let char = ['a','b','a','d','f','b'];
+let char2 = new Set(char);
+console.log("Remove Duplicate Items using new Set :",char2);    // ['a','b','d','f']; 
+
+
+// 2. filter : returns array
+let data = char.filter((item,index) => {
+    // if(char.indexOf(item) === index){
+    //     return item;
+    // }
+    return char.indexOf(item) === index;
+} )
+console.log("Remove Duplicate Items using filter :",data);
