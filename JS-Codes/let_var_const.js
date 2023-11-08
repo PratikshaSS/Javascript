@@ -12,7 +12,8 @@ function test(){
      if(a < 20){
        let b = 30;  
        var c = 60;
-       const d = 70
+       const d = 70;
+       console.log(b);
      }
      console.log(c);
      // console.log(d);     //false
