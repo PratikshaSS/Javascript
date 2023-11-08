@@ -42,8 +42,8 @@ function test(){
  a = 60;
  
  // reassigning value to the variable is not possible with const keyword
- const s = 60;
- s = 77;
+//  const s = 60;
+//  s = 77;
  
 
  // hoisting : first define value to the variable then declare it
@@ -54,8 +54,8 @@ function test(){
  p = 50;
  var p;
 
- e = 30;
- let e;
+//  e = 30;
+//  let e;
  
 
  //defining value at a time of declaration is must with const keyword
@@ -70,3 +70,24 @@ function test(){
  
  const y = 90;
  
+
+ //function : parameterised, parameterless
+ //use is to implement logic
+
+ function multiplication(){   //parameterless
+  //code block
+  console.log("Parameterless Function");
+  let a = 20;
+  let b = 30;
+  res = a * b;
+  console.log("Multiplication is :",res);
+ }
+
+ //argument/parameter
+ function division(a,b){  //parameterised
+  //code block
+  console.log("Parameterised Function");
+  res = a / b;
+  console.log("Division is :",res);
+
+ }
