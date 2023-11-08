@@ -5,7 +5,8 @@
 // scope level diff:
 // let & const : block level scope 
 // var : function level scope
-
+ 
+var z = 90;   //global variable
 function test(){
     let a = 10;
      if(a < 20){
@@ -16,8 +17,9 @@ function test(){
      console.log(c);
      // console.log(d);     //false
      // console.log(b);     //false
+     console.log(z);      //90
  }
- 
+ console.log(z);     //90
  console.log(test());
  
  // Redeclaration is not possible with let,const keyword
